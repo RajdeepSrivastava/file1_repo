@@ -1,5 +1,7 @@
 
-<%= form_tag("/users/create", :method => "post") do %>
+
+<<%= form_tag("/users/update/#{@user.id}", :method => "post") do %>
+
     Name <%= text_field_tag(:name) %><br>
     Email_id <%= email_field_tag(:email)%><br>
     Address <%= text_field_tag(:address)%><br>

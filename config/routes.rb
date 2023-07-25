@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   get "/users/new", to: "users#new"
   post "/users/create", to: "users#create"
   get "/users/:id", to: "users#view"
+  get "/users/edit/:id", to: "users#edit"
+  post "/users/update/:id", to: "users#update"
+
 end

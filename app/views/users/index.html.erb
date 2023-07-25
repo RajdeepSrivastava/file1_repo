@@ -1,4 +1,6 @@
 
+<div class="card">
+  <div class="card-body">
 <table>
     <tr> 
         <th> Name </th>
@@ -8,13 +10,18 @@
 
     <% @users.each do |user| %>
     <%# debugger %>
+
     <tr>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
         <td><%= link_to "View", "/users/#{user.id}"%></td>
+        <td><%= link_to "Edit", "/users/edit/#{user.id}"%> </td>
     <tr>
     <% end %>
 
 </table>
 
-<%= link_to "New User", "/users/new"%>
+<%= link_to "New User", "/users/new"%>   
+
+    </div>
+</div>
